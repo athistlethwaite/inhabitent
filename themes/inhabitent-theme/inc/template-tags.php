@@ -200,3 +200,13 @@
 	 $latest_posts = get_posts($args);
 	 return $latest_posts;
  }
+
+//  To Add in SHOP STUFF: 
+//  function inhabitent_shop_stuff() {
+// 	$args = array(
+// 		'post-type' => 'post', 
+// 		'posts_per_page' => 4,
+// 	);
+// 	$shop_stuff = get_taxonomy($args);
+// 	return $shop_stuff;
+// }

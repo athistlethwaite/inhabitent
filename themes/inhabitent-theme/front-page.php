@@ -5,32 +5,44 @@
  * @package RED_Starter_Theme
  */
 
-
-get_header(); ?>
+get_header();?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-    <div>
-      <?php 
-      $journal_posts = inhabitent_get_latest_posts();
-      ?>
+     <!-- SHOP STUFF  -->
+     <!-- $categories = get_terms( 'category', array(
+    'orderby'    => 'count',
+    'hide_empty' => 0,
+    ) ); -->
 
-      <?php 
-      foreach($journal_posts as $post) : setup_postdata( $post ); 
-      ?>
+
+
+
+     <!-- INHABITENT JOURNAL -->
+    <div class ="inhabitent-journal"></div>
+      <h1>Inhabitent Journal</h1>
 
       <div>
-        <?php if(has_post_thumbnail()): ?>
-        <?php the_post_thumbnail('medium'); ?> 
-        <?php endif; ?> 
+        <?php
+        $journal_posts = inhabitent_get_latest_posts();
+        ?>
 
-        <a href="<?php the_permalink(); ?>">Read Entry</a> 
+        <?php
+        foreach ($journal_posts as $post): setup_postdata($post);
+        ?>
 
-        <?php 
-          the_date();
-          echo comments_number();
-          the_title();
+					<div>
+					<?php if (has_post_thumbnail()): ?>
+					<?php the_post_thumbnail('medium');?>
+				  <?php endif;?>
+
+        <a href="<?php the_permalink();?>">Read Entry</a>
+
+        <?php
+        the_date();
+        echo comments_number();
+        the_title();
 
         endforeach;
 
@@ -39,7 +51,9 @@ get_header(); ?>
       </div>
     </div>
 
+     <!-- LATEST ADVENTURES -->
+
   </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer();?>

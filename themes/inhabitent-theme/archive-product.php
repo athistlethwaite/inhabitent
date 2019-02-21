@@ -36,6 +36,13 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<div class = "shop-page-tiles">
+			<?php
+        $args = array('posts_per_page' => 16);
+        $product_posts = get_posts( $args ); 
+			?>
+		</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
