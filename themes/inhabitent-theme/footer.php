@@ -28,7 +28,7 @@
 		</div>
 
 		<div class="logo-svg">
-			<?php echo "<img src='../../../inhabitent-logo-text.svg' alt='inhabitent-logo'/>"; ?>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg" />
 		</div>
 
 		<div class="copyright">

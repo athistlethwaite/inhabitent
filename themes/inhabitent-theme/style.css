@@ -712,3 +712,46 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(images/dark-wood.png);
+  width: 100%; }
+  .site-footer h3 {
+    color: #2F1339;
+    text-transform: uppercase; }
+
+.contact-info span {
+  font-weight: bold; }
+
+.copyright {
+  text-align: center; }
