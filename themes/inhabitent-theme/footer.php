@@ -8,7 +8,6 @@
 ?>
 
 <footer class="site-footer">
-	<div>
 		<div class="contact-info">
 			<h3>Contact Info</h3>
 			<p><i class="fas fa-envelope"></i>info@inhabitent.com</p>
@@ -32,9 +31,8 @@
 		</div>
 
 		<div class="copyright">
-			<p>Copywrite &copy; 2019 Inhabitent</p>
+			<p>Copyright &copy; 2019 Inhabitent</p>
 		</div>
-	</div>
 </footer>
 
 		<?php wp_footer(); ?> 

@@ -9,30 +9,31 @@ get_header();?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+    
+    <section class = "front-hero-image">
+    </section>
 
      <!-- SHOP STUFF  -->
-     <!-- $categories = get_terms( 'category', array(
-    'orderby'    => 'count',
-    'hide_empty' => 0,
-    ) ); -->
+    <section class="product-types">
+        <?php $product_types=get_terms('product_type'); ?>
+        <?php foreach ( $product_types as $product_type ) : setup_postdata( $term ); ?>
+        <div>
+          <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/'.$product_type ->slug . '.svg'?>> 
+          <p><?php echo $product_type -> description ?></p>
+            <a href=<?php echo get_term_link($product_type)?>> <?php echo $product_type->name?> stuff</a>
+        </div>
 
-
-
+        <?php endforeach; wp_reset_postdata(); ?>
+    </section>
 
      <!-- INHABITENT JOURNAL -->
-    <div class ="inhabitent-journal"></div>
+    <section class ="inhabitent-journal">
       <h1>Inhabitent Journal</h1>
 
-      <div>
-        <?php
-        $journal_posts = inhabitent_get_latest_posts();
-        ?>
+        <?php $journal_posts = inhabitent_get_latest_posts();?>
+        <?php foreach ($journal_posts as $post): setup_postdata($post); ?>
 
-        <?php
-        foreach ($journal_posts as $post): setup_postdata($post);
-        ?>
-
-					<div>
+				<div>
 					<?php if (has_post_thumbnail()): ?>
 					<?php the_post_thumbnail('medium');?>
 				  <?php endif;?>
@@ -49,9 +50,11 @@ get_header();?>
         wp_reset_postdata();
         ?>
       </div>
-    </div>
+    </section>
 
-     <!-- LATEST ADVENTURES -->
+     <!-- LATEST ADVENTURES ** stretch goal -->
+     <!-- <section class="latest-adventure">
+     </section> -->
 
   </main><!-- #main -->
 </div><!-- #primary -->

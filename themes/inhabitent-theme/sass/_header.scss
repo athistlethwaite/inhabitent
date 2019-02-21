@@ -4,8 +4,22 @@
   justify-content: space-between;
   position: fixed;
   width: 100%;
+
+  .front-logo {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .main-navigation {
   display: flex;
+}
+
+.front-hero-image {
+  background-image: url(../../images/inhabitent-logo-full.svg),
+    url(../../images/home-hero.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center, center;
+  height: 700px;
 }

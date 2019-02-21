@@ -725,11 +725,21 @@ object {
           justify-content: space-between;
   position: fixed;
   width: 100%; }
+  .site-header .front-logo {
+    height: 50px;
+    width: 50px; }
 
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.front-hero-image {
+  background-image: url(../../images/inhabitent-logo-full.svg), url(../../images/home-hero.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center, center;
+  height: 700px; }
 
 .site-footer {
   display: -webkit-box;
@@ -741,17 +751,29 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url(images/dark-wood.png);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(../../images/dark-wood.png);
+  padding: 50px;
   width: 100%; }
+  .site-footer div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33%;
+            flex: 1 0 33%; }
+  .site-footer p {
+    color: white; }
+  .site-footer p span {
+    font-weight: bold; }
   .site-footer h3 {
-    color: #2F1339;
+    color: #d99054;
     text-transform: uppercase; }
 
-.contact-info span {
-  font-weight: bold; }
+.logo-svg {
+  width: 280px; }
 
 .copyright {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
   text-align: center; }

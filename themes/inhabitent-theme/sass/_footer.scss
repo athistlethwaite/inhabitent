@@ -2,28 +2,38 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  background-image: url(images/dark-wood.png);
+  justify-content: space-between;
+  background-image: url(../../images/dark-wood.png);
+  padding: 50px;
   width: 100%;
 
+  div {
+    flex: 1 0 33%;
+  }
+
+  p {
+    color: white;
+  }
+
+  p span {
+    font-weight: bold;
+  }
+
   h3 {
-    color: #2F1339;
+    color: #d99054;
     text-transform: uppercase;
   }
 }
 
 
-.contact-info {
-
-  span {
-    font-weight: bold;
-  }
-}
 
 // .business-hours {}
 
-// .logo-svg {}
+.logo-svg {
+  width: 280px;
+}
 
 .copyright {
+  flex: 1 0 100%;
   text-align: center;
 }
