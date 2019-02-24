@@ -2,127 +2,30 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-.site-main {
-  align-items: center;
-}
+/* Shop Page */
+/* Journal Page */
+/* About Page */
 
-/* Front page - Shop Stuff */
+.page-template-about {
+  h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 2px;
+  }
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
 
-}
-
-.product-type-blocks {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-
-  .product-type-wrapper {
-    flex: 0 1 23.5%;
-    max-width: 23.5%;
-    padding: .75rem;
-    padding-bottom: 1.5rem;
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px;
-
-    //make sure to change this orange to brand color
-    &:hover {
-      border-color: orange;
-    }
-
-    img {
-      max-width: 30%;
-    }
-
-    a {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 10px 20px;
-      color: white;
-
-      &:hover {
-        background-color: darken(#248a83, 10%)
-      }
-    }
-
-    .btn {
-      background: #248a83;
-      color: white;
-      text-decoration: none;
-      border: none;
-      border-radius: 0;
-      line-height: 1;
-      font-family: Novecento Sans Web, sans-serif;
-      font-size: .9rem;
-      padding: .75rem 1.5rem;
-    }
+  .entry-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
   }
 }
 
-/* Front page - Top Journals */
-
-.latest-entries {
-
-  ul {
-    list-style-type: none;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    // margin-left: auto;
-    // margin-right: auto;
-
-    li {
-      border: 1px solid #e1e1e1;
-
-
-      .latest-entries-info {
-        padding: .75rem;
-
-        p {
-          font-size: 0.8em;
-        }
-
-        h3 {
-          text-transform: uppercase;
-
-          a {
-            text-decoration: none;
-            color: #248a83;
-
-            //make sure to change to the purple branding color
-            &:hover {
-              color: purple;
-            }
-          }
-        }
-      }
-    }
-
-    .thumbnail {
-      background-color: #e1e1e1;
-      border-bottom: 5px solid #e1e1e1;
-      overflow: hidden;
-    }
-
-  }
-
-  .read-entry-btn {
-    border: 1px solid black;
-    color: black;
-    text-decoration: none;
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: .9rem;
-    padding: 10px 20px;
-
-    &:hover {
-      color: white;
-      background-color: #248a83;
-      border-color: #248a83;
-    }
-  }
-}
+/* Find Us Page */

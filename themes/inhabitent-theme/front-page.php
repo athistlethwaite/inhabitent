@@ -15,7 +15,7 @@ get_header();?>
 
      <!-- SHOP STUFF  -->
     <section class="product-types container">
-      <h1>Shop Stuff</h1>
+      <h2>Shop Stuff</h2>
       <div class="product-type-blocks">
           <?php $product_types=get_terms('product_type'); ?>
           <?php foreach ( $product_types as $product_type ) : setup_postdata( $term ); ?>
@@ -30,7 +30,7 @@ get_header();?>
 
      <!-- INHABITENT JOURNAL -->
     <section class ="inhabitent-journal container">
-      <h1>Inhabitent Journal</h1>
+      <h2>Inhabitent Journal</h2>
       <div class="latest-entries container">
 
         <ul>
