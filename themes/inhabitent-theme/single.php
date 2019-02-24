@@ -14,6 +14,11 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+			<button class="social-media-button"><i class="fab fa-facebook-f"></i> Like</button>
+			<button class="social-media-button"><i class="fab fa-twitter"></i> Tweet</button>
+			<button class="social-media-button"><i class="fab fa-pinterest"></i> Pin</button>
+
+
 			<?php the_post_navigation(); ?>
 
 			<?php

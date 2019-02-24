@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The main template file for the journal.
  *
  * @package Inhabitent_Theme
  */
@@ -35,6 +35,9 @@ get_header(); ?>
 
 
 		</main><!-- #main -->
+
+		<?php get_sidebar(); ?>
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

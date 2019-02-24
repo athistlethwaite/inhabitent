@@ -305,9 +305,6 @@ h2 {
   text-align: center; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
 dfn,
 cite,
 em,
@@ -679,7 +676,6 @@ body {
 .bypostauthor {
   display: block; }
 
-/* Products */
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -741,11 +737,67 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
-# Page Templates
+# Page Templates: Shop, Journal, About, Find Us
 --------------------------------------------------------------*/
-/* Shop Page */
-/* Journal Page */
+/*--------------------------------------------------------------
+# Shop Page 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Shop Type Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Single Journal Page 
+--------------------------------------------------------------*/
+article {
+  max-width: 75%; }
+
+.entry-header {
+  position: relative;
+  color: white;
+  line-height: 0; }
+  .entry-header a {
+    color: white;
+    text-decoration: none; }
+  .entry-header .entry-title {
+    position: absolute;
+    background-color: #248a83;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    font-size: 2rem;
+    max-width: 75%;
+    margin-top: 2.25rem;
+    padding: .75rem 1.5rem;
+    top: 0; }
+  .entry-header .entry-meta {
+    position: absolute;
+    display: inline-block;
+    background-color: #248a83;
+    color: white;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
+    padding: 1.05rem 1.5rem;
+    right: 0px;
+    bottom: 0px; }
+  .entry-header img {
+    height: auto;
+    max-width: 100%; }
+
+/*--------------------------------------------------------------
+# Journal Page 
+--------------------------------------------------------------*/
 /* About Page */
+.hero-image-header {
+  height: 100vh;
+  color: white;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -32px !important; }
+
 .page-template-about h1 {
   color: white;
   font-weight: bold;
@@ -896,15 +948,6 @@ object {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Novecento Sans Web', sans-serif; }
-
-.hero-image-header {
-  height: 100vh;
-  color: white;
-  text-transform: uppercase;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: -32px !important; }
 
 .site-main {
   -webkit-box-align: center;

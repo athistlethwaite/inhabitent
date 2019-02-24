@@ -13,9 +13,10 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+				<h1>Shop Stuff</h1>
 			</header><!-- .page-header -->
-			<section ><!--add class-->
+
+			<section class="product-types"><!--add class-->
 			<?php $product_types=get_terms('product_type'); ?>
         <?php foreach ( $product_types as $product_type ) : setup_postdata( $term ); ?>
         <div>
@@ -23,13 +24,14 @@ get_header(); ?>
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
 			</section>
+
+			
 			<section><!--add class-->
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php
 					get_template_part( 'template-parts/content','products' );
 				?>
-
 			<?php endwhile; ?>
 
 		<?php else : ?>
@@ -38,6 +40,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 		</section>
+
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

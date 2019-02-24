@@ -25,8 +25,10 @@ get_header(); ?>
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
-			<?php endwhile; ?>
+				
+				<a href="<?php the_permalink(); ?>" class="journal-btn">Read More</a>
+				
+				<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 

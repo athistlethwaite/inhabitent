@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying archive products.
  *
  * @package Inhabitent_Theme
  */
@@ -13,9 +13,11 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
-			</header><!-- .page-header -->
-			<section ><!--add class-->
+				<?php single_term_title( '<h1 class="page-title">', '</h1>' );?>
+				<!-- <?php the_archive_description('<div class="taxonomy-description">','</div>');?> -->
+			</header>
+
+			<section class="product-types"><!--add class-->
 			<?php $product_types=get_terms('product_type'); ?>
         <?php foreach ( $product_types as $product_type ) : setup_postdata( $term ); ?>
         <div>
@@ -23,13 +25,14 @@ get_header(); ?>
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
 			</section>
+
+			
 			<section><!--add class-->
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php
 					get_template_part( 'template-parts/content','products' );
 				?>
-
 			<?php endwhile; ?>
 
 		<?php else : ?>
@@ -38,7 +41,10 @@ get_header(); ?>
 
 		<?php endif; ?>
 		</section>
+
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
