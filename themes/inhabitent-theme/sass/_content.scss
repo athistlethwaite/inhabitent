@@ -2,6 +2,17 @@
 # Content
 --------------------------------------------------------------*/
 
+body {
+	margin: 0 auto;
+}
+
+.container {
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 /* Posts and pages */
 
 .sticky {
@@ -12,7 +23,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
+.updated:not(.published) {
 	display: none;
 }
 
@@ -44,6 +55,14 @@
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
 }
+
+
+/* Products */
+
+// .type-product {
+// 	display: grid;
+// }

@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 /**
@@ -45,3 +45,18 @@ function inhabitent_login_url() {
 }
 
 add_filter('login_headerurl', 'inhabitent_login_url');
+
+
+ //Function to display 16 products on shop page: 
+ function inhabitent_modify_products ( $query ) {
+	if ( is_admin() || ! $query->is_main_query() )
+			return;
+
+	if ( is_post_type_archive( 'product' ) || is_tax("product-type") ) {
+			$query->set( 'orderby', 'title');
+			$query->set( 'order', 'ASC');
+			$query->set( 'posts_per_page', 16);
+      return;
+	} 
+}
+add_action( 'pre_get_posts', 'inhabitent_modify_products', 1 );

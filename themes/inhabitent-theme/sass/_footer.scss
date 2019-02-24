@@ -4,14 +4,29 @@
   flex-direction: row;
   justify-content: space-between;
   background-image: url(../../images/dark-wood.png);
-  padding: 50px;
+  padding: 50px 100px 0px 100px;
   width: 100%;
 
-  div {
-    flex: 1 0 33%;
+  .site-info {
+    display: flex;
+    width: 100%;
+
+    .contact-inhabitent {
+      display: flex;
+      width: 50%;
+      flex-direction: row;
+
+      .contact-info,
+      .business-hours {
+        width: 50%;
+      }
+
+    }
   }
 
+
   p {
+    font-family: 'Merriweather Web', serif;
     color: white;
   }
 
@@ -20,20 +35,31 @@
   }
 
   h3 {
+    font-family: 'Novecento Sans Web', sans-serif;
     color: #d99054;
     text-transform: uppercase;
+    margin: 0px;
   }
 }
 
-
-
-// .business-hours {}
-
 .logo-svg {
-  width: 280px;
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: end;
 }
 
 .copyright {
-  flex: 1 0 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  p {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web', sans-serif;
+  }
 }

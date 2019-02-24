@@ -1,25 +1,68 @@
 .site-header {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
+  align-items: center;
+  // position: fixed;
+  margin-top: 10px;
   width: 100%;
 
-  .front-logo {
-    height: 50px;
-    width: 50px;
+  .inhabitent-header {
+    margin: 0 auto;
+    display: flex;
+
+    .front-logo {
+      margin-top: 9px;
+      height: 50px;
+      width: 50px;
+    }
+
+    .main-navigation {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-family: Novecento Sans Web, sans-serif;
+      text-transform: uppercase;
+
+      a {
+        color: #248a83;
+      }
+
+      .menu-item {
+        padding: 0 12px;
+
+
+      }
+    }
   }
 }
 
-.main-navigation {
-  display: flex;
+.search-form {
+  fieldset {
+    border: none;
+
+    .search-field {
+      display: none;
+    }
+
+    .search-submit {
+      border: none;
+      border-color: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    .icon-search {
+      color: #248a83;
+    }
+  }
 }
 
 .front-hero-image {
   background-image: url(../../images/inhabitent-logo-full.svg),
     url(../../images/home-hero.jpg);
+  background: linear-gradient(0, 0, 0, .4);
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: center, center;
-  height: 700px;
+  height: 100vh;
 }

@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
@@ -30,6 +30,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
+		<?php inhabitent_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

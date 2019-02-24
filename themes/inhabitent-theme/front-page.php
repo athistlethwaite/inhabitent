@@ -2,7 +2,7 @@
 /**
  * The template for displaying the home-page.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header();?>
@@ -14,41 +14,47 @@ get_header();?>
     </section>
 
      <!-- SHOP STUFF  -->
-    <section class="product-types">
-        <?php $product_types=get_terms('product_type'); ?>
-        <?php foreach ( $product_types as $product_type ) : setup_postdata( $term ); ?>
-        <div>
-          <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/'.$product_type ->slug . '.svg'?>> 
-          <p><?php echo $product_type -> description ?></p>
-            <a href=<?php echo get_term_link($product_type)?>> <?php echo $product_type->name?> stuff</a>
-        </div>
-
+    <section class="product-types container">
+      <h1>Shop Stuff</h1>
+      <div class="product-type-blocks">
+          <?php $product_types=get_terms('product_type'); ?>
+          <?php foreach ( $product_types as $product_type ) : setup_postdata( $term ); ?>
+          <div class="product-type-wrapper">
+            <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/'.$product_type ->slug . '.svg'?>> 
+            <p><?php echo $product_type -> description ?></p>
+            <a class="btn" href=<?php echo get_term_link($product_type)?>> <?php echo $product_type->name?> Stuff</a>
+          </div>
         <?php endforeach; wp_reset_postdata(); ?>
+      </div>
     </section>
 
      <!-- INHABITENT JOURNAL -->
-    <section class ="inhabitent-journal">
+    <section class ="inhabitent-journal container">
       <h1>Inhabitent Journal</h1>
+      <div class="latest-entries container">
 
-        <?php $journal_posts = inhabitent_get_latest_posts();?>
-        <?php foreach ($journal_posts as $post): setup_postdata($post); ?>
+        <ul>
+          <?php $journal_posts = inhabitent_get_latest_posts();?>
+          <?php foreach ($journal_posts as $post): setup_postdata($post); ?>
+          
+          <li>
+              <?php if (has_post_thumbnail()): ?>
+              
+              <div class="thumbnail">
+					      <?php the_post_thumbnail('large');?>
+              </div>
 
-				<div>
-					<?php if (has_post_thumbnail()): ?>
-					<?php the_post_thumbnail('medium');?>
-				  <?php endif;?>
+				      <?php endif; ?>
+            
+              <div class="latest-entries-info">
+                <p><?php the_time('j F, Y'); ?> / <?php comments_number(); ?></p>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <a class="read-entry-btn" href="<?php the_permalink();?>">Read Entry</a>
+              </div>
+          </li>
 
-        <a href="<?php the_permalink();?>">Read Entry</a>
-
-        <?php
-        the_date();
-        echo comments_number();
-        the_title();
-
-        endforeach;
-
-        wp_reset_postdata();
-        ?>
+          <?php endforeach; wp_reset_postdata(); ?>
+        </ul>
       </div>
     </section>
 
@@ -60,3 +66,4 @@ get_header();?>
 </div><!-- #primary -->
 
 <?php get_footer();?>
+

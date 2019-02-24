@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent_Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -276,20 +276,31 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather Web";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -309,16 +320,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -347,7 +363,7 @@ body {
 
 blockquote,
 q {
-  quotes: '' ''; }
+  quotes: "" ""; }
   blockquote:before, blockquote:after,
   q:before,
   q:after {
@@ -358,10 +374,6 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
-
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
 
 ul {
   list-style: disc; }
@@ -613,6 +625,14 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+body {
+  margin: 0 auto; }
+
+.container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -648,6 +668,7 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Products */
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -711,11 +732,95 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-.site-header {
+.site-main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* Front page - Shop Stuff */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.product-type-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+  .product-type-blocks .product-type-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 23.5%;
+            flex: 0 1 23.5%;
+    max-width: 23.5%;
+    padding: .75rem;
+    padding-bottom: 1.5rem;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px; }
+    .product-type-blocks .product-type-wrapper:hover {
+      border-color: orange; }
+    .product-type-blocks .product-type-wrapper img {
+      max-width: 30%; }
+    .product-type-blocks .product-type-wrapper a {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      color: white; }
+      .product-type-blocks .product-type-wrapper a:hover {
+        background-color: #19625d; }
+    .product-type-blocks .product-type-wrapper .btn {
+      background: #248a83;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 0;
+      line-height: 1;
+      font-family: Novecento Sans Web, sans-serif;
+      font-size: .9rem;
+      padding: .75rem 1.5rem; }
+
+/* Front page - Top Journals */
+.latest-entries ul {
+  list-style-type: none;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+  .latest-entries ul li {
+    border: 1px solid #e1e1e1; }
+    .latest-entries ul li .latest-entries-info {
+      padding: .75rem; }
+      .latest-entries ul li .latest-entries-info p {
+        font-size: 0.8em; }
+      .latest-entries ul li .latest-entries-info h3 {
+        text-transform: uppercase; }
+        .latest-entries ul li .latest-entries-info h3 a {
+          text-decoration: none;
+          color: #248a83; }
+          .latest-entries ul li .latest-entries-info h3 a:hover {
+            color: purple; }
+  .latest-entries ul .thumbnail {
+    background-color: #e1e1e1;
+    border-bottom: 5px solid #e1e1e1;
+    overflow: hidden; }
+
+.latest-entries .read-entry-btn {
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: .9rem;
+  padding: 10px 20px; }
+  .latest-entries .read-entry-btn:hover {
+    color: white;
+    background-color: #248a83;
+    border-color: #248a83; }
+
+.site-header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -723,23 +828,58 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
   width: 100%; }
-  .site-header .front-logo {
-    height: 50px;
-    width: 50px; }
+  .site-header .inhabitent-header {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-header .inhabitent-header .front-logo {
+      margin-top: 9px;
+      height: 50px;
+      width: 50px; }
+    .site-header .inhabitent-header .main-navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      font-family: Novecento Sans Web, sans-serif;
+      text-transform: uppercase; }
+      .site-header .inhabitent-header .main-navigation a {
+        color: #248a83; }
+      .site-header .inhabitent-header .main-navigation .menu-item {
+        padding: 0 12px; }
 
-.main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.search-form fieldset {
+  border: none; }
+  .search-form fieldset .search-field {
+    display: none; }
+  .search-form fieldset .search-submit {
+    border: none;
+    border-color: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .search-form fieldset .icon-search {
+    color: #248a83; }
 
 .front-hero-image {
   background-image: url(../../images/inhabitent-logo-full.svg), url(../../images/home-hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0), color-stop(0), to(0.4));
+  background: linear-gradient(0, 0, 0, 0.4);
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: center, center;
-  height: 700px; }
+  height: 100vh; }
 
 .site-footer {
   display: -webkit-box;
@@ -755,25 +895,69 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-image: url(../../images/dark-wood.png);
-  padding: 50px;
+  padding: 50px 100px 0px 100px;
   width: 100%; }
-  .site-footer div {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 33%;
-            flex: 1 0 33%; }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .site-footer .site-info .contact-inhabitent {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .site-footer .site-info .contact-inhabitent .contact-info,
+      .site-footer .site-info .contact-inhabitent .business-hours {
+        width: 50%; }
   .site-footer p {
+    font-family: 'Merriweather Web', serif;
     color: white; }
   .site-footer p span {
     font-weight: bold; }
   .site-footer h3 {
+    font-family: 'Novecento Sans Web', sans-serif;
     color: #d99054;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0px; }
 
 .logo-svg {
-  width: 280px; }
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end; }
 
 .copyright {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-  text-align: center; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  .copyright p {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web', sans-serif; }
+
+.hero-image-header {
+  height: 100vh;
+  color: white;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -32px !important; }
