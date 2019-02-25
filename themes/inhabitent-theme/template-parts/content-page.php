@@ -9,10 +9,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<div class="about-content">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -20,5 +20,6 @@
 				'after'  => '</div>',
 			) );
 		?>
+		</div>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

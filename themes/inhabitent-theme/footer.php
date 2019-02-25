@@ -6,7 +6,7 @@
  */
 
 ?>
-
+</div>
 <footer class="site-footer container">
 	<div class="site-info">
 		<div class="contact-inhabitent">

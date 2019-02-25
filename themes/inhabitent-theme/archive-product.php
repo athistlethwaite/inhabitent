@@ -32,7 +32,7 @@ get_header(); ?>
 			
 			<div class="product-grid">
 				<div class = "product-grid-item">
-					<?php $args = array( 'post_type' => 'product', 'posts_per_page' => 16, 'order' => 'DESC'); $product_posts = get_posts( $args ); ?>
+					<?php $args = array( 'post_type' => 'product', 'posts_per_page' => 16, 'order' => 'ASC'); $product_posts = get_posts( $args ); ?>
 					
 						<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 					

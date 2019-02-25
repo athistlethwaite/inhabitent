@@ -1,59 +1,176 @@
 /*--------------------------------------------------------------
 # Journal Page - home.php
 --------------------------------------------------------------*/
-.journal-page .single-journal-page {
+
+.primary {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.journal-page {
+
+  img {
+    height: auto;
+    width: 100%;
+  }
 
   .entry-header {
     position: relative;
-    max-width: 700px;
     color: white;
     line-height: 0;
     margin: auto;
 
-
     a {
-      color: white;
       text-decoration: none;
-    }
-
-    .entry-title {
-      position: absolute;
-      background-color: #248a83;
-      font-family: Novecento Sans Web, sans-serif;
-      font-size: 2.5em;
-      font-weight: bold;
-      text-align: left;
-      line-height: 1;
-      font-size: 2rem;
-      max-width: 75%;
-      margin-top: 2.25rem;
-      padding: .75rem 1.5rem;
-      top: 0;
-    }
-
-    //look this over with Ben - why do i jave right at 96 but the demo is at 0?
-
-    .entry-meta {
-      position: absolute;
-      display: inline-block;
-      background-color: #248a83;
       color: white;
-      text-transform: uppercase;
-      font-family: Novecento Sans Web, sans-serif;
-      padding: 1.05rem 1.5rem;
-      right: 0px;
-      bottom: 0px;
-      font-size: 16px;
     }
+  }
 
-    img {
-      height: auto;
-      width: 100%;
+  .entry-title {
+    position: absolute;
+    background-color: #248a83;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    font-size: 2rem;
+    max-width: 75%;
+    margin-top: 2.25rem;
+    padding: .75rem 1.5rem;
+    top: 0;
+  }
+
+  //look this over with Ben - why do i jave right at 96 but the demo is at 0?
+
+  .entry-meta {
+    position: absolute;
+    display: inline-block;
+    background-color: #248a83;
+    color: white;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
+    padding: 1.05rem 1.5rem;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16px;
+  }
+}
+
+.entry-content {
+  .read-entry-btn {
+    border: 1px solid black;
+    border-radius: 0;
+    color: black;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 14px;
+    padding: .75rem 1.5rem;
+
+    &:hover {
+      color: white;
+      background-color: #248a83;
+      border-color: #248a83;
     }
   }
 }
 
-
 /*--------------------------------------------------------------
 # Single Journal Page - single.php
 --------------------------------------------------------------*/
+
+.primary {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.single-journal-page {
+  .entry-header {
+    position: relative;
+    color: white;
+    line-height: 0;
+    margin: auto;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .entry-title {
+    position: absolute;
+    background-color: #248a83;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    font-size: 2rem;
+    max-width: 75%;
+    margin-top: 2.25rem;
+    padding: .75rem 1.5rem;
+    top: 0;
+  }
+
+  .entry-meta {
+    position: absolute;
+    display: inline-block;
+    background-color: #248a83;
+    color: white;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
+    padding: 1.05rem 1.5rem;
+    right: 0px;
+    bottom: 0px;
+    font-size: 16px;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+.entry-footer {
+  a {
+    color: #248a83;
+    display: inline-block;
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+  }
+
+  span.cat-links,
+  span.tags-links {
+    color: black;
+    display: inline-block;
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+    margin-right: 1.5rem;
+  }
+}
+
+.social-media-button {
+  background: white;
+  border: 1px solid black;
+  border-radius: 0;
+  color: black;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-shadow: none;
+  box-shadow: none;
+
+  &:hover {
+    color: white;
+    background-color: #248a83;
+    border-color: #248a83;
+    box-shadow: none;
+    text-shadow: none;
+  }
+}

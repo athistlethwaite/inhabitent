@@ -1,92 +1,73 @@
 /*--------------------------------------------------------------
-# Page Templates: Shop, About, Find Us
+# Page Templates: Sidebar (Journal, Single Journal, Archive, and Find Us)
+
 --------------------------------------------------------------*/
 
-
-/*--------------------------------------------------------------
-# Shop Stuff Page 
---------------------------------------------------------------*/
-
-.product-grid {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  // flex-direction: row;
-  // width: 1120px;
-  // border-top: 1px dashed #e1e1e1;
-  // padding-top: 50px;
-
-  .product-grid-item {
-    border: 1px solid #e1e1e1;
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-
-
-    .product-wrapper {
-      border-bottom: 5px solid #e1e1e1;
-    }
-
-
-    .product-info {
-      .product-title {}
-
-      .product-price {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;
-      }
-    }
+.blog,
+.archive,
+.post-template-default {
+  .site-content {
+    display: flex;
+    flex: 1 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
   }
 }
 
+.journal-page,
+.single-journal-page,
+.find-us-page,
+.archive-page,
+  {
+  width: 73%;
+  padding-right: 5%;
+  border-right: 1px solid #e1e1e1;
 
-/*--------------------------------------------------------------
-# Shop Type Page
---------------------------------------------------------------*/
-
-
+  .widget-area {
+    width: 27%;
+    padding-left: 5%;
+  }
+}
 
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
 
-.about-hero-image {
+.hero-image-header {
   display: flex;
-  background-image: url(../../images/about-hero.jpg);
-  background: linear-gradient(0, 0, 0, .4) 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
 
-  .about-inhabitent {
-    h1 {
-      color: white;
-      font-weight: bold;
-      font-size: 3em;
-      letter-spacing: 2px;
-    }
-
-    h2 {
-      font-weight: bold;
-      text-align: center;
-      font-size: 2em;
-      letter-spacing: 2px;
-    }
-
-    .entry-content {
-      margin-left: auto;
-      margin-right: auto;
-      width: 800px;
-    }
+.about-content {
+  h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 2px;
   }
 
-  /*--------------------------------------------------------------
+  h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Find Us Page 
 --------------------------------------------------------------*/
