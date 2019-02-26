@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------
+# Shop Stuff Page 
+--------------------------------------------------------------*/
+
+.page-header {
+  .product-type-list {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.2rem;
+    padding: 20px;
+
+    li {
+      margin: 0 1.5rem;
+
+      a {
+        color: #248a83;
+        text-decoration: none;
+
+        &:hover {
+          color: #2f1339;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 1.5rem;
+  border-top: 1px dashed #e1e1e1;
+  padding-top: 50px;
+
+  .product-grid-item {
+    border: 1px solid #e1e1e1;
+
+    .product-wrapper {
+      overflow: hidden;
+      height: 250px;
+      position: relative;
+      border-bottom: 5px solid #e1e1e1;
+
+      img {
+        max-width: 450px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+    }
+  }
+}
+
+.product-info {
+  padding: 12px 16px;
+
+  .product-title {
+    display: inline;
+    text-transform: capitalize;
+    font-family: Merriweather Web, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    background-color: white;
+    padding-right: 4px;
+
+    &:before {
+      float: left;
+      width: 0;
+      white-space: nowrap;
+      content: '..................................................';
+    }
+  }
+
+  .product-price {
+    float: right;
+    display: inline;
+    text-transform: capitalize;
+    font-family: Merriweather Web, serif;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding-left: 4px;
+    background: white;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Shop Type Page
+--------------------------------------------------------------*/
+.taxonomy-header {
+
+  .taxonomy-description {
+    p {
+      font-size: .5rem;
+    }
+  }
+}

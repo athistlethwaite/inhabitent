@@ -47,24 +47,15 @@ function inhabitent_login_url() {
 add_filter('login_headerurl', 'inhabitent_login_url');
 
 //Filter Taxonomy Name: 
+function my_theme_archive_title( $title ) {
+if ( is_tax('product_type') ) {
+			$title = single_term_title( '', false );
+	}
 
-// function my_theme_archive_title( $title ) {
-// 	if ( is_category() ) {
-// 			$title = single_cat_title( '', false );
-// 	} elseif ( is_tag() ) {
-// 			$title = single_tag_title( '', false );
-// 	} elseif ( is_author() ) {
-// 			$title = '<span class="vcard">' . get_the_author() . '</span>';
-// 	} elseif ( is_post_type_archive() ) {
-// 			$title = post_type_archive_title( '', false );
-// 	} elseif ( is_tax() ) {
-// 			$title = single_term_title( '', false );
-// 	}
+	return $title;
+}
 
-// 	return $title;
-// }
-
-// add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
 
 
  //Function to display 16 products on shop page: 

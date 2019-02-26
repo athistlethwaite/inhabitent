@@ -31,27 +31,23 @@ get_header(); ?>
 
 			
 			<div class="product-grid">
+
+						<?php while (have_posts()) : the_post(); ?>
 				<div class = "product-grid-item">
-					<?php $args = array( 'post_type' => 'product', 'posts_per_page' => 16, 'order' => 'ASC'); $product_posts = get_posts( $args ); ?>
-					
-						<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-					
 					<div class="product-wrapper">
         		<?php /* Start the loop */ ?>
-						<a class href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' );  ?></a>
+						<a class href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' );  ?></a>
+					</div>
 							
 						<div class="product-info">
-							<p class="product-title"><?php the_title(); ?></p>
-							<p class="product-dots">......................</p>
-							<p class="product-price"><?php echo CFS()->get( 'product_price' ); ?></p>
+							<h3 class="product-title"><?php the_title(); ?></h3>
+							<span class="product-price"><?php echo CFS()->get( 'product_price' ); ?></span>
 						</div>
-
-					</div>
 				
-				<?php endforeach; wp_reset_postdata(); ?>
+				</div>
+<?php endwhile;  ?>
 				<?php endif; ?>
 
-				</div>
 			</div>
 
 
