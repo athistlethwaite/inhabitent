@@ -58,9 +58,45 @@ get_header();?>
       </div>
     </section>
 
-     <!-- LATEST ADVENTURES ** stretch goal -->
-     <!-- <section class="latest-adventure">
-     </section> -->
+     <!-- LATEST ADVENTURES -->
+     <section class=" adventures container">
+    <h2 class="adventure-title"> Latest Adventures </h2>
+    <div class="adventure-wrapper">
+        <div class="canoe-left">
+            <div class="story-info">
+                <a href="#" class="canoe-text">Getting Back to Nature in a Canoe</a>
+                <a href="#"><span class="read">Read More</span></a>
+            </div>
+        </div>
+
+        <div class="beach-top-right">
+            <div class="beach-night">
+                <div class="story-info">
+                    <a href="#" class="" beach-text"">A Night with Friends at the Beach</a>
+                    <a href="#"><span class="read">Read More</span></a>
+                </div>
+            </div>
+
+            <div class="adventure-bottom-right">
+                <div class="big-mountain">
+                    <div class="story-info">
+                        <a href="#" class="bottom-adv-text">Taking in the View at Big Mountain</a>
+                        <a href="#"><span class="read">Read More</span></a>
+                    </div><!-- story info -->
+                </div>
+                <!--mountain hikers-->
+                <div class="star-gazing">
+                    <div class="story-info">
+                        <a href="#" class="bottom-adv-text">Star-Gazing at the Night Sky</a>
+                        <a href="#"><span class="read">Read More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <a href="#" class="btn">More Adventures</a>
+</section>
 
   </main><!-- #main -->
 </div><!-- #primary -->

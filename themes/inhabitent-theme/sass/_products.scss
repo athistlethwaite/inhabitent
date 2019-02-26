@@ -33,7 +33,7 @@
   grid-gap: 1.5rem;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 1.5rem;
-  border-top: 1px dashed #e1e1e1;
+  border-top: 1px dashed #c8c8c8;
   padding-top: 50px;
 
   .product-grid-item {
@@ -74,7 +74,7 @@
       float: left;
       width: 0;
       white-space: nowrap;
-      content: '..................................................';
+      content: '.....................................................';
     }
   }
 
@@ -93,14 +93,31 @@
 }
 
 
-/*--------------------------------------------------------------
-# Shop Type Page
---------------------------------------------------------------*/
 .taxonomy-header {
-
   .taxonomy-description {
     p {
-      font-size: .5rem;
+      font-size: 16px;
+      text-align: center;
+      padding: 20px;
     }
+  }
+}
+
+/*--------------------------------------------------------------
+# Single Product Page 
+--------------------------------------------------------------*/
+
+.single-product-page {
+  display: flex;
+
+  h1 {
+    color: #d99054;
+  }
+
+  span {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-transform: uppercase;
   }
 }

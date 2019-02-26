@@ -5,7 +5,11 @@
 
 .blog,
 .archive,
-.post-template-default,
+.site-content,
+.content-area,
+
+// .post-template-default,
+// .page-template-default,
   {
   .site-content {
     display: flex;
@@ -20,7 +24,6 @@
 
 .journal-page,
 .single-journal-page,
-.find-us-page,
 .archive-page,
   {
   width: 73%;
@@ -72,3 +75,25 @@
 /*--------------------------------------------------------------
 # Find Us Page 
 --------------------------------------------------------------*/
+.find-us-page {
+  display: flex;
+  flex: 1 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+
+  .site-content {
+    display: flex;
+    width: 73%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1;
+  }
+
+  .secondary {
+    width: 27%;
+    display: flex;
+    padding-left: 5%;
+  }
+}

@@ -1,21 +1,15 @@
-# RED Starter
+# Inhabitent - Project 4
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+This project demonstates a multi-page website built in WordPress.
 
-## Installation
+## Some Features 
 
-### 1. Download me (don't clone me!)
+- Created a custom widget plug for the business hours in the sidebar.
+- Created a custom post type for the Products.
+- Used grid on various elements throughout the Inhabitent website. 
+Used a custom page template for the About Page. 
 
-Then add me to your `wp-content` directory.
+## Reflection 
 
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+- Learning WordPress has been a very challenging, but rewarding experience. In one week, I feel like I have learned a lot, but will definitely need to work on the project during portfolio week. 
+- Here is a list of items I would like to improve: A few pages need to be styled, toggle-able search bar, incorporating more JS funcationality into the website, and working on my understanding of how everythings works together. 

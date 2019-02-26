@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="single-product-page" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -23,10 +23,11 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
-
 		<?php endwhile; // End of the loop. ?>
-
 		</main><!-- #main -->
+		<button class="social-media-button"><i class="fab fa-facebook-f"></i> Like</button>
+			<button class="social-media-button"><i class="fab fa-twitter"></i> Tweet</button>
+			<button class="social-media-button"><i class="fab fa-pinterest"></i> Pin</button>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
