@@ -15,7 +15,6 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'product' ); ?>
 
-			<?php the_post_navigation(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

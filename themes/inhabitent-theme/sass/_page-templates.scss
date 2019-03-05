@@ -1,37 +1,58 @@
 /*--------------------------------------------------------------
-# Page Templates: Sidebar (Journal, Single Journal, Archive, and Find Us)
-
+# Page Templates
 --------------------------------------------------------------*/
-
-
 .site-content {
-  display: flex;
-  flex: 1 0 auto;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
 }
 
 
-.journal-page,
-.single-journal-page,
-.archive-page,
-  {
-  width: 73%;
-  padding-right: 20px;
-  border-right: 1px solid #e1e1e1;
+.blog,
+.single,
+.page,
+.archive,
+.search,
+.error404 {
+
+  .site-content {
+    display: flex;
+    flex: 1 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .journal-page,
+    .single-journal-page,
+    .archive-page,
+    .find-us-page,
+    .search,
+    .error404 {
+      width: 73%;
+      padding-right: 5%;
+      border-right: 1px solid #e1e1e1;
+    }
+  }
+
 }
 
 .widget-area {
   width: 27%;
-  padding-left: 60px;
+  padding-left: 5%;
 
   h2 {
     font-size: 1.5rem;
     margin-bottom: 0;
+    font-weight: bold;
   }
+
+  span {
+    &:hover {
+      color: $color__purple-brand-color;
+    }
+  }
+
 
   a {
     color: #248a83;
@@ -99,32 +120,5 @@
     margin-left: auto;
     margin-right: auto;
     width: 800px;
-  }
-}
-
-
-/*--------------------------------------------------------------
-# Find Us Page 
---------------------------------------------------------------*/
-.find-us-page {
-  display: flex;
-  flex: 1 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
-
-  .site-content {
-    display: flex;
-    width: 73%;
-    padding-right: 5%;
-    border-right: 1px solid #e1e1e1;
-  }
-
-  .secondary {
-    width: 27%;
-    display: flex;
-    padding-left: 5%;
   }
 }

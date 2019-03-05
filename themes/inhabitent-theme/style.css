@@ -296,13 +296,18 @@ h6 {
 h1 {
   font-size: 2.4rem;
   line-height: 1.25px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0.5rem; }
 
 h2 {
   font-size: 2.1rem;
   line-height: 1.25px;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
+p {
+  margin-bottom: 1.5rem; }
 
 /* Copy */
 dfn,
@@ -739,10 +744,18 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
-# Page Templates: Sidebar (Journal, Single Journal, Archive, and Find Us)
-
+# Page Templates
 --------------------------------------------------------------*/
 .site-content {
+  margin-left: auto;
+  margin-right: auto; }
+
+.blog .site-content,
+.single .site-content,
+.page .site-content,
+.archive .site-content,
+.search .site-content,
+.error404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,22 +765,57 @@ object {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 3rem; }
-
-.journal-page,
-.single-journal-page,
-.archive-page {
-  width: 73%;
-  padding-right: 20px;
-  border-right: 1px solid #e1e1e1; }
+  .blog .site-content .journal-page,
+  .blog .site-content .single-journal-page,
+  .blog .site-content .archive-page,
+  .blog .site-content .find-us-page,
+  .blog .site-content .search,
+  .blog .site-content .error404,
+  .single .site-content .journal-page,
+  .single .site-content .single-journal-page,
+  .single .site-content .archive-page,
+  .single .site-content .find-us-page,
+  .single .site-content .search,
+  .single .site-content .error404,
+  .page .site-content .journal-page,
+  .page .site-content .single-journal-page,
+  .page .site-content .archive-page,
+  .page .site-content .find-us-page,
+  .page .site-content .search,
+  .page .site-content .error404,
+  .archive .site-content .journal-page,
+  .archive .site-content .single-journal-page,
+  .archive .site-content .archive-page,
+  .archive .site-content .find-us-page,
+  .archive .site-content .search,
+  .archive .site-content .error404,
+  .search .site-content .journal-page,
+  .search .site-content .single-journal-page,
+  .search .site-content .archive-page,
+  .search .site-content .find-us-page,
+  .search .site-content .search,
+  .search .site-content .error404,
+  .error404 .site-content .journal-page,
+  .error404 .site-content .single-journal-page,
+  .error404 .site-content .archive-page,
+  .error404 .site-content .find-us-page,
+  .error404 .site-content .search,
+  .error404 .site-content .error404 {
+    width: 73%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1; }
 
 .widget-area {
   width: 27%;
-  padding-left: 60px; }
+  padding-left: 5%; }
   .widget-area h2 {
     font-size: 1.5rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: bold; }
+  .widget-area span:hover {
+    color: #2f1339; }
   .widget-area a {
     color: #248a83;
     text-decoration: none; }
@@ -821,34 +869,8 @@ object {
   width: 800px; }
 
 /*--------------------------------------------------------------
-# Find Us Page 
+# Header
 --------------------------------------------------------------*/
-.find-us-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  padding-top: 1rem;
-  padding-bottom: 3rem; }
-  .find-us-page .site-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 73%;
-    padding-right: 5%;
-    border-right: 1px solid #e1e1e1; }
-  .find-us-page .secondary {
-    width: 27%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 5%; }
-
 .home,
 .site-header {
   -webkit-box-orient: horizontal;
@@ -975,6 +997,9 @@ object {
     text-transform: uppercase;
     font-family: "Novecento", sans-serif; }
 
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
 .site-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1194,24 +1219,31 @@ h2 {
 /*--------------------------------------------------------------
 # Journal Page - home.php
 --------------------------------------------------------------*/
-.primary {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-
-.journal-page img {
+.journal-page img,
+.single-journal-page img,
+.archive-page img {
   height: auto;
   width: 100%; }
 
-.journal-page .entry-header {
+.journal-page .entry-header,
+.single-journal-page .entry-header,
+.archive-page .entry-header {
   position: relative;
   color: white;
-  line-height: 0;
-  margin: auto; }
-  .journal-page .entry-header a {
+  line-height: 0; }
+  .journal-page .entry-header a,
+  .single-journal-page .entry-header a,
+  .archive-page .entry-header a {
     text-decoration: none;
     color: white; }
+    .journal-page .entry-header a:hover,
+    .single-journal-page .entry-header a:hover,
+    .archive-page .entry-header a:hover {
+      color: #f0e4d1; }
 
-.journal-page .entry-title {
+.journal-page .entry-title,
+.single-journal-page .entry-title,
+.archive-page .entry-title {
   position: absolute;
   background-color: #248a83;
   font-family: "Novecento", sans-serif;
@@ -1225,7 +1257,9 @@ h2 {
   padding: .75rem 1.5rem;
   top: 0; }
 
-.journal-page .entry-meta {
+.journal-page .entry-meta,
+.single-journal-page .entry-meta,
+.archive-page .entry-meta {
   position: absolute;
   display: inline-block;
   background-color: #248a83;
@@ -1256,50 +1290,6 @@ h2 {
 /*--------------------------------------------------------------
 # Single Journal Page - single.php
 --------------------------------------------------------------*/
-.primary {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-
-.single-journal-page .entry-header {
-  position: relative;
-  color: white;
-  line-height: 0;
-  margin: auto; }
-
-.single-journal-page a {
-  color: white;
-  text-decoration: none; }
-
-.single-journal-page .entry-title {
-  position: absolute;
-  background-color: #248a83;
-  font-family: "Novecento", sans-serif;
-  font-size: 2.5em;
-  font-weight: bold;
-  text-align: left;
-  line-height: 1;
-  font-size: 2rem;
-  max-width: 75%;
-  margin-top: 2.25rem;
-  padding: .75rem 1.5rem;
-  top: 0; }
-
-.single-journal-page .entry-meta {
-  position: absolute;
-  display: inline-block;
-  background-color: #248a83;
-  color: white;
-  text-transform: uppercase;
-  font-family: "Novecento", sans-serif;
-  padding: 1.05rem 1.5rem;
-  right: 0px;
-  bottom: 0px;
-  font-size: 16px; }
-
-.single-journal-page img {
-  height: auto;
-  width: 100%; }
-
 .entry-footer a {
   color: #248a83;
   display: inline-block;
@@ -1419,18 +1409,6 @@ h2 {
 /*--------------------------------------------------------------
 # Single Product Page 
 --------------------------------------------------------------*/
-.single-product-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .single-product-page h1 {
-    color: #d99054; }
-  .single-product-page span {
-    font-family: "Novecento", sans-serif;
-    font-size: 1.8rem;
-    margin-top: 0;
-    text-transform: uppercase; }
-
 .error-404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1464,7 +1442,8 @@ h2 {
     padding: 0;
     margin: 0; }
     .error-404 .page-content ul a {
-      color: #248A83; }
+      color: #248A83;
+      text-decoration: none; }
       .error-404 .page-content ul a:hover {
         color: #2f1339; }
 

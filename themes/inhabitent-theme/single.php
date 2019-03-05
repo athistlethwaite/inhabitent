@@ -18,8 +18,7 @@ get_header(); ?>
 			<button class="social-media-button"><i class="fab fa-twitter"></i> Tweet</button>
 			<button class="social-media-button"><i class="fab fa-pinterest"></i> Pin</button>
 
-
-			<?php the_post_navigation(); ?>
+			<form action="find-us" method="post" class="find-us">
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

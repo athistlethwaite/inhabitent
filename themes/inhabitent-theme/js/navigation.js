@@ -107,17 +107,3 @@
     }
   })(container);
 })();
-
-
-// Toggle search button
-
-$(document).ready(function () {
-  $('.main-navigation svg').on('click', function () {
-    $('.search-form').toggleClass('header-display');
-    $('.search-field').focus();
-  })
-
-  $('.search-form .search-field').on('blur', function () {
-    $('.search-form').toggleClass('header-display');
-  })
-})
