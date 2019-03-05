@@ -746,7 +746,8 @@ object {
 .blog .site-content,
 .archive .site-content,
 .site-content .site-content,
-.content-area .site-content {
+.content-area .site-content,
+.post-template-default .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
