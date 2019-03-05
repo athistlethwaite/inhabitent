@@ -752,7 +752,7 @@ object {
 
 .blog .site-content,
 .single .site-content,
-.page .site-content,
+.page-template-default .site-content,
 .archive .site-content,
 .search .site-content,
 .error404 .site-content {
@@ -779,12 +779,12 @@ object {
   .single .site-content .find-us-page,
   .single .site-content .search,
   .single .site-content .error404,
-  .page .site-content .journal-page,
-  .page .site-content .single-journal-page,
-  .page .site-content .archive-page,
-  .page .site-content .find-us-page,
-  .page .site-content .search,
-  .page .site-content .error404,
+  .page-template-default .site-content .journal-page,
+  .page-template-default .site-content .single-journal-page,
+  .page-template-default .site-content .archive-page,
+  .page-template-default .site-content .find-us-page,
+  .page-template-default .site-content .search,
+  .page-template-default .site-content .error404,
   .archive .site-content .journal-page,
   .archive .site-content .single-journal-page,
   .archive .site-content .archive-page,
@@ -806,6 +806,11 @@ object {
     width: 73%;
     padding-right: 5%;
     border-right: 1px solid #e1e1e1; }
+
+.tax-product_type .site-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .widget-area {
   width: 27%;
@@ -1066,12 +1071,14 @@ h2 {
     .latest-entries ul li .latest-entries-info {
       padding: .75rem; }
       .latest-entries ul li .latest-entries-info p {
-        font-size: 0.8em; }
+        font-size: 0.8em;
+        margin: 0; }
       .latest-entries ul li .latest-entries-info h3 {
         text-transform: uppercase; }
         .latest-entries ul li .latest-entries-info h3 a {
           text-decoration: none;
-          color: #248a83; }
+          color: #248a83;
+          margin: 0; }
           .latest-entries ul li .latest-entries-info h3 a:hover {
             color: #2f1339; }
   .latest-entries ul img {
