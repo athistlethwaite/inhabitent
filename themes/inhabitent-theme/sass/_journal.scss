@@ -29,7 +29,7 @@
   .entry-title {
     position: absolute;
     background-color: #248a83;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     font-size: 2.5em;
     font-weight: bold;
     text-align: left;
@@ -41,15 +41,13 @@
     top: 0;
   }
 
-  //look this over with Ben - why do i jave right at 96 but the demo is at 0?
-
   .entry-meta {
     position: absolute;
     display: inline-block;
     background-color: #248a83;
     color: white;
     text-transform: uppercase;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     padding: 1.05rem 1.5rem;
     right: 0px;
     bottom: 0px;
@@ -65,9 +63,10 @@
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     font-size: 14px;
     padding: .75rem 1.5rem;
+    text-transform: uppercase;
 
     &:hover {
       color: white;
@@ -102,7 +101,7 @@
   .entry-title {
     position: absolute;
     background-color: #248a83;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     font-size: 2.5em;
     font-weight: bold;
     text-align: left;
@@ -120,7 +119,7 @@
     background-color: #248a83;
     color: white;
     text-transform: uppercase;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     padding: 1.05rem 1.5rem;
     right: 0px;
     bottom: 0px;
@@ -138,7 +137,7 @@
   a {
     color: #248a83;
     display: inline-block;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     text-transform: uppercase;
   }
 
@@ -146,7 +145,7 @@
   span.tags-links {
     color: black;
     display: inline-block;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     text-transform: uppercase;
     margin-right: 1.5rem;
   }
@@ -160,7 +159,7 @@
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: $font__novecento;
   font-size: .9rem;
   padding: .75rem 1.5rem;
   text-shadow: none;

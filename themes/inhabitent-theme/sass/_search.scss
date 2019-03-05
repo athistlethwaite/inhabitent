@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Search Form 
+--------------------------------------------------------------*/
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.search-form fieldset {
+  border: none;
+  padding: 0;
+
+  .icon-search {
+    color: #248a83;
+  }
+
+  input.search-field {
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    font-family: $font__novecento;
+  }
+
+  .search-submit {
+    border: none;
+    border-color: none;
+    background: none;
+    box-shadow: none;
+  }
+}
+
+input.search-field {
+  background-color: #f4f4f4;
+  border-radius: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: $font__merriweather;
+}
+
+/*--------------------------------------------------------------
+# Search Results
+--------------------------------------------------------------*/

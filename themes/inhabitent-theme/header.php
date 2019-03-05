@@ -33,7 +33,7 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
+						<!-- <i class="fas fa-search"></i> -->
 						<div class="search-form">
 							<?php get_search_form(); ?>
 						</div>

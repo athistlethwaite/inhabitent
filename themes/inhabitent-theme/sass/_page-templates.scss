@@ -3,35 +3,67 @@
 
 --------------------------------------------------------------*/
 
-.blog,
-.archive,
-.site-content,
-.content-area,
-.post-template-default,
-// .page-template-default,
-  {
-  .site-content {
-    display: flex;
-    flex: 1 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-  }
+
+.site-content {
+  display: flex;
+  flex: 1 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
+
 
 .journal-page,
 .single-journal-page,
 .archive-page,
   {
   width: 73%;
-  padding-right: 5%;
+  padding-right: 20px;
   border-right: 1px solid #e1e1e1;
+}
 
-  .widget-area {
-    width: 27%;
-    padding-left: 5%;
+.widget-area {
+  width: 27%;
+  padding-left: 60px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #248a83;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .custom-html-widget {
+    p {
+      display: flex;
+    }
+
+    i {
+      line-height: 1.8;
+      margin-right: .5rem;
+      width: 20px;
+      color: black;
+    }
+
+    .fa {
+      font-size: inherit;
+      text-rendering: auto;
+    }
+  }
+
+  .day-of-week {
+    font-weight: bold;
   }
 }
 

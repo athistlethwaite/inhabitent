@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="archive-page">
+	<div id="primary" class="archive-page has-sidebar">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

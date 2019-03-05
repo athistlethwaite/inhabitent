@@ -26,7 +26,7 @@
 
 
   p {
-    font-family: 'Merriweather Web', serif;
+    font-family: $font__merriweather;
     color: white;
   }
 
@@ -35,8 +35,8 @@
   }
 
   h3 {
-    font-family: 'Novecento Sans Web', sans-serif;
-    color: #d99054;
+    font-family: $font__novecento;
+    color: $color__orange-brand-color;
     text-transform: uppercase;
     margin: 0px;
   }
@@ -60,6 +60,6 @@
     padding-bottom: 0px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Novecento Sans Web', sans-serif;
+    font-family: $font__novecento;
   }
 }

@@ -113,18 +113,11 @@
 
 $(document).ready(function () {
   $('.main-navigation svg').on('click', function () {
-    $('.header-search-bar').toggleClass('header-display');
+    $('.search-form').toggleClass('header-display');
     $('.search-field').focus();
   })
 
-  $('.header-search-bar .search-field').on('blur', function () {
-    $('.header-search-bar').toggleClass('header-display');
+  $('.search-form .search-field').on('blur', function () {
+    $('.search-form').toggleClass('header-display');
   })
-
-  //home page and about page: 
-
-  if ($('.home').length || $('.page-template-about').length || $('.adventures-template-default').length) {
-    $('.site-header').addClass('front-hero-image');
-  }
-
 })

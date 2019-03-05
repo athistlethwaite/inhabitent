@@ -54,7 +54,7 @@ h2 {
       border: none;
       border-radius: 0;
       line-height: 1;
-      font-family: Novecento Sans Web, sans-serif;
+      font-family: $font__novecento;
       font-size: .9rem;
       padding: .75rem 1.5rem;
     }
@@ -118,7 +118,7 @@ h2 {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     font-size: .9rem;
     padding: .75rem 1.5rem;
 
@@ -141,7 +141,7 @@ h2 {
     display: flex;
     width: 100%;
     height: 600px;
-    font-family: Merriweather Web, serif;
+    font-family: $font__merriweather;
 
     .story-info {
       display: flex;
@@ -157,7 +157,7 @@ h2 {
         border: 1px solid #fff;
         text-transform: uppercase;
         text-decoration: none;
-        font-family: Novecento Sans Web, sans-serif;
+        font-family: $font__novecento;
         text-align: center;
         cursor: pointer;
         line-height: 1;
@@ -273,7 +273,7 @@ h2 {
     cursor: pointer;
     border: none;
     border-radius: 0;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;

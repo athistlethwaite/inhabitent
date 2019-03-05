@@ -8,7 +8,7 @@
     justify-content: center;
     text-transform: uppercase;
     list-style-type: none;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     font-size: 1.2rem;
     padding: 20px;
 
@@ -82,7 +82,7 @@
     float: right;
     display: inline;
     text-transform: capitalize;
-    font-family: Merriweather Web, serif;
+    font-family: $font__merriweather;
     font-size: 1rem;
     line-height: 1;
     font-weight: 400;
@@ -115,7 +115,7 @@
   }
 
   span {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__novecento;
     font-size: 1.8rem;
     margin-top: 0;
     text-transform: uppercase;

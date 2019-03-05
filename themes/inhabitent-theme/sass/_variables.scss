@@ -5,6 +5,7 @@ $base__space-unit: 1.5rem;
 // Colors
 
 $color__background-body: #fff;
+$color__gradient: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 $color__text-main: #404040;
 
 $color__background-screen: #f1f1f1;
@@ -15,13 +16,29 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: #248A83;
+$color__link-visited: #248A83;
+$color__link-hover: #2f1339;
+
+// Brand Colors
+
+$color__main-font: #404040;
+$color__teal-brand-color: #248A83;
+$color__purple-brand-color: #2f1339;
+$color__orange-brand-color: #d99054;
+$color__light-grey-brand-color: #a1a1a1;
+$color__dark-grey-brand-color: #808080;
+
+
+// Borders 
+
+$color__solid-border: #e1e1e1;
+$color__dashed-border: #c8c8c8;
+
 
 // Typography
 
-$font__main: 'Merriweather Web';
+$font__main: 'Merriweather';
 $font__code: Monaco,
 Consolas,
 "Andale Mono",
@@ -32,3 +49,7 @@ Courier,
 monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+$font__novecento: 'Novecento',
+sans-serif;
+$font__merriweather: 'Merriweather',
+serif;

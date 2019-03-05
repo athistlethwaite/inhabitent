@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="find-us-page">
+	<div id="primary" class="find-us-page has-sidebar">
 
 		<main id="main" class="site-main" role="main">
 

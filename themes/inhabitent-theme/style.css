@@ -226,42 +226,42 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather';
   src: url("../../fonts/merriweather-light-webfont.eot");
   src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather';
   src: url("../../fonts/merriweather-lightitalic-webfont.eot");
   src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather';
   src: url("../../fonts/merriweather-bold-webfont.eot");
   src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather';
   src: url("../../fonts/merriweather-bolditalic-webfont.eot");
   src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Novecento Sans Web';
+  font-family: 'Novecento';
   src: url("../../fonts/novecentosanswide-normal-webfont.eot");
   src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecento Sans Web';
+  font-family: 'Novecento';
   src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
   src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
   font-weight: bold;
@@ -276,7 +276,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Merriweather Web";
+  font-family: "Merriweather";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -289,7 +289,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
@@ -482,11 +482,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -621,8 +621,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
-  /* Make sure select elements fit in widgets. */ }
+  margin: 0 0 1.5rem; }
   .widget select {
     max-width: 100%; }
 
@@ -743,11 +742,7 @@ object {
 # Page Templates: Sidebar (Journal, Single Journal, Archive, and Find Us)
 
 --------------------------------------------------------------*/
-.blog .site-content,
-.archive .site-content,
-.site-content .site-content,
-.content-area .site-content,
-.post-template-default .site-content {
+.site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,13 +759,36 @@ object {
 .single-journal-page,
 .archive-page {
   width: 73%;
-  padding-right: 5%;
+  padding-right: 20px;
   border-right: 1px solid #e1e1e1; }
-  .journal-page .widget-area,
-  .single-journal-page .widget-area,
-  .archive-page .widget-area {
-    width: 27%;
-    padding-left: 5%; }
+
+.widget-area {
+  width: 27%;
+  padding-left: 60px; }
+  .widget-area h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0; }
+  .widget-area a {
+    color: #248a83;
+    text-decoration: none; }
+  .widget-area ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .widget-area .custom-html-widget p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .widget-area .custom-html-widget i {
+    line-height: 1.8;
+    margin-right: .5rem;
+    width: 20px;
+    color: black; }
+  .widget-area .custom-html-widget .fa {
+    font-size: inherit;
+    text-rendering: auto; }
+  .widget-area .day-of-week {
+    font-weight: bold; }
 
 /*--------------------------------------------------------------
 # About Page
@@ -867,7 +885,7 @@ object {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      font-family: Novecento Sans Web, sans-serif;
+      font-family: "Novecento", sans-serif;
       text-transform: uppercase; }
       .home .inhabitent-header .main-navigation a,
       .site-header .inhabitent-header .main-navigation a {
@@ -875,19 +893,6 @@ object {
       .home .inhabitent-header .main-navigation .menu-item,
       .site-header .inhabitent-header .main-navigation .menu-item {
         padding: 0 12px; }
-
-.search-form fieldset {
-  border: none; }
-  .search-form fieldset .search-field {
-    display: none; }
-  .search-form fieldset .search-submit {
-    border: none;
-    border-color: none;
-    background: none;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .search-form fieldset .icon-search {
-    color: #248a83; }
 
 .front-hero-image {
   background-image: url(../../images/inhabitent-logo-full.svg), url(../../images/home-hero.jpg);
@@ -932,12 +937,12 @@ object {
       .site-footer .site-info .contact-inhabitent .business-hours {
         width: 50%; }
   .site-footer p {
-    font-family: 'Merriweather Web', serif;
+    font-family: "Merriweather", serif;
     color: white; }
   .site-footer p span {
     font-weight: bold; }
   .site-footer h3 {
-    font-family: 'Novecento Sans Web', sans-serif;
+    font-family: "Novecento", sans-serif;
     color: #d99054;
     text-transform: uppercase;
     margin: 0px; }
@@ -968,7 +973,7 @@ object {
     padding-bottom: 0px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Novecento Sans Web', sans-serif; }
+    font-family: "Novecento", sans-serif; }
 
 .site-main {
   -webkit-box-align: center;
@@ -1020,7 +1025,7 @@ h2 {
       border: none;
       border-radius: 0;
       line-height: 1;
-      font-family: Novecento Sans Web, sans-serif;
+      font-family: "Novecento", sans-serif;
       font-size: .9rem;
       padding: .75rem 1.5rem; }
 
@@ -1059,7 +1064,7 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   font-size: .9rem;
   padding: .75rem 1.5rem; }
   .latest-entries .read-entry-btn:hover {
@@ -1076,7 +1081,7 @@ h2 {
     display: flex;
     width: 100%;
     height: 600px;
-    font-family: Merriweather Web, serif; }
+    font-family: "Merriweather", serif; }
     .adventures .adventure-wrapper .story-info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1093,7 +1098,7 @@ h2 {
         border: 1px solid #fff;
         text-transform: uppercase;
         text-decoration: none;
-        font-family: Novecento Sans Web, sans-serif;
+        font-family: "Novecento", sans-serif;
         text-align: center;
         cursor: pointer;
         line-height: 1;
@@ -1176,7 +1181,7 @@ h2 {
     cursor: pointer;
     border: none;
     border-radius: 0;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: "Novecento", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -1209,7 +1214,7 @@ h2 {
 .journal-page .entry-title {
   position: absolute;
   background-color: #248a83;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   font-size: 2.5em;
   font-weight: bold;
   text-align: left;
@@ -1226,7 +1231,7 @@ h2 {
   background-color: #248a83;
   color: white;
   text-transform: uppercase;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   padding: 1.05rem 1.5rem;
   right: 0px;
   bottom: 0px;
@@ -1239,9 +1244,10 @@ h2 {
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   font-size: 14px;
-  padding: .75rem 1.5rem; }
+  padding: .75rem 1.5rem;
+  text-transform: uppercase; }
   .entry-content .read-entry-btn:hover {
     color: white;
     background-color: #248a83;
@@ -1267,7 +1273,7 @@ h2 {
 .single-journal-page .entry-title {
   position: absolute;
   background-color: #248a83;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   font-size: 2.5em;
   font-weight: bold;
   text-align: left;
@@ -1284,7 +1290,7 @@ h2 {
   background-color: #248a83;
   color: white;
   text-transform: uppercase;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   padding: 1.05rem 1.5rem;
   right: 0px;
   bottom: 0px;
@@ -1297,14 +1303,14 @@ h2 {
 .entry-footer a {
   color: #248a83;
   display: inline-block;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   text-transform: uppercase; }
 
 .entry-footer span.cat-links,
 .entry-footer span.tags-links {
   color: black;
   display: inline-block;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   text-transform: uppercase;
   margin-right: 1.5rem; }
 
@@ -1316,7 +1322,7 @@ h2 {
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   font-size: .9rem;
   padding: .75rem 1.5rem;
   text-shadow: none;
@@ -1342,7 +1348,7 @@ h2 {
           justify-content: center;
   text-transform: uppercase;
   list-style-type: none;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: "Novecento", sans-serif;
   font-size: 1.2rem;
   padding: 20px; }
   .page-header .product-type-list li {
@@ -1397,7 +1403,7 @@ h2 {
     float: right;
     display: inline;
     text-transform: capitalize;
-    font-family: Merriweather Web, serif;
+    font-family: "Merriweather", serif;
     font-size: 1rem;
     line-height: 1;
     font-weight: 400;
@@ -1420,37 +1426,12 @@ h2 {
   .single-product-page h1 {
     color: #d99054; }
   .single-product-page span {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: "Novecento", sans-serif;
     font-size: 1.8rem;
     margin-top: 0;
     text-transform: uppercase; }
 
-.widget-area {
-  width: 27%;
-  padding-left: 5%; }
-  .widget-area h2 {
-    font-size: 1.5rem; }
-  .widget-area a {
-    color: #248a83;
-    text-decoration: none; }
-  .widget-area ul {
-    list-style-type: none; }
-  .widget-area .custom-html-widget p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .widget-area .custom-html-widget i {
-    line-height: 1.8;
-    margin-right: .5rem;
-    width: 20px;
-    color: black; }
-  .widget-area .custom-html-widget .fa {
-    font-size: inherit;
-    text-rendering: auto; }
-  .widget-area .day-of-week {
-    font-weight: bold; }
-
-.error404 .site-content {
+.error-404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1459,11 +1440,11 @@ h2 {
       -ms-flex-direction: row;
           flex-direction: row; }
 
-.error404 .error-404 {
+.error-404 .error-404 {
   width: 800px;
   padding: 40px 20px 40px 80px; }
 
-.error404 h1 {
+.error-404 h1 {
   margin: 0;
   padding-top: 50px;
   font-weight: bold;
@@ -1471,3 +1452,56 @@ h2 {
   text-align: center;
   font-size: 16px;
   padding-bottom: 10px; }
+
+.error-404 .page-content {
+  margin: 0; }
+  .error-404 .page-content h2 {
+    text-transform: uppercase;
+    color: #2f1339;
+    font-weight: bold; }
+  .error-404 .page-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .error-404 .page-content ul a {
+      color: #248A83; }
+      .error-404 .page-content ul a:hover {
+        color: #2f1339; }
+
+/*--------------------------------------------------------------
+# Search Form 
+--------------------------------------------------------------*/
+fieldset {
+  border: none;
+  padding: 0; }
+
+.search-form fieldset {
+  border: none;
+  padding: 0; }
+  .search-form fieldset .icon-search {
+    color: #248a83; }
+  .search-form fieldset input.search-field {
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    font-family: "Novecento", sans-serif; }
+  .search-form fieldset .search-submit {
+    border: none;
+    border-color: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+input.search-field {
+  background-color: #f4f4f4;
+  border-radius: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Merriweather", serif; }
+
+/*--------------------------------------------------------------
+# Search Results
+--------------------------------------------------------------*/

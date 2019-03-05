@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="single-journal-page">
+	<div id="primary" class="single-journal-page has-sidebar">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
