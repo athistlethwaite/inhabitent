@@ -11,6 +11,7 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'medium' ); ?>
 		<?php endif; ?>
+	
 		<?php the_title( '<p class="entry-title">', '</p>' ); ?>
   <p><?php echo CFS()->get( 'product_price' ); ?></p>
 

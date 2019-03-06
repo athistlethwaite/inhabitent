@@ -105,3 +105,39 @@
 /*--------------------------------------------------------------
 # Single Product Page 
 --------------------------------------------------------------*/
+
+.single-product {
+  .content-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.single-product-wrapper {
+  .hentry {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .entry-header,
+  .entry-content {
+    width: 48%;
+
+    h1 {
+      text-align: start;
+      margin: 0;
+    }
+
+  }
+
+  span {
+    font-family: $font__novecento;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+
+  .entry-title {
+    color: $color__orange-brand-color;
+  }
+
+}

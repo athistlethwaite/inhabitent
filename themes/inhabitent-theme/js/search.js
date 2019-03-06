@@ -1,13 +1,12 @@
 // Toggle search button
 
 jQuery(document).ready(function ($) {
-  $('.search-field').attr("placeholder", "Type and press enter...");
+  $('.search-field').attr("placeholder", "Type and hit enter...");
   $('.search-field').hide();
-  $('.search-submit').hide();
-  console.log(123);
 
   $('.search-button').click(() => {
     $('header .search-field').show('slow');
+    $('header .search-field').focus();
   });
 
   $('header .search-field').on('blur', function () {
@@ -15,3 +14,19 @@ jQuery(document).ready(function ($) {
   });
 
 });
+
+
+//Stretch Goal** 
+// if ($('.home').length || $('.page-template-about').length) {
+//   $('.site-header').addClass('front-hero-image');
+// }
+
+//Change of header:
+// $(window).scroll(function () {
+//   var screenPosition = $(document).scrollTop();
+//   if (screenPosition < $('.front-header').height() || screenPosition < $('.page-template-about .entry-header').height()) {
+//     $('.site-header').addClass('front-hero-image');
+//   } else {
+//     $('.site-header').removeClass('front-hero-image');
+//   }
+// });

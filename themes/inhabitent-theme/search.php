@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area has-sidebar">
+	<section id="primary" class="search-results has-sidebar">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -29,6 +29,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
+			
 		<?php endif; ?>
 
 		</main><!-- #main -->

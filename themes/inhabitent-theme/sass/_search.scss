@@ -7,40 +7,70 @@ fieldset {
   padding: 0;
 }
 
-// .search-form fieldset {
-//   border: none;
-//   padding: 0;
+.search-button {
+  border: none;
+  background: none;
+  box-shadow: none;
+  color: $color__teal-brand-color;
 
-//   .icon-search {
-//     color: #248a83;
-//   }
+  &:hover {
+    color: none;
+  }
+}
 
-//   input.search-field {
-//     width: 100%;
-//     background-color: white;
-//     border-radius: 0;
-//     padding-top: 5px;
-//     padding-bottom: 5px;
-//     font-size: 0.9em;
-//     font-family: $font__novecento;
-//   }
 
-//   .search-submit {
-//     border: none;
-//     border-color: none;
-//     background: none;
-//     box-shadow: none;
-//   }
-// }
+.search-form fieldset {
+  border: white;
+  padding: 0;
 
-// input.search-field {
-//   background-color: #f4f4f4;
-//   border-radius: 0;
-//   padding-top: 5px;
-//   padding-bottom: 5px;
-//   font-family: $font__merriweather;
-// }
+  .icon-search {
+    color: #248a83;
+  }
+
+  input.search-field {
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    font-family: $font__novecento;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
 
 /*--------------------------------------------------------------
 # Search Results
 --------------------------------------------------------------*/
+
+.search-results .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+
+  h1 {
+    text-align: left;
+  }
+
+}
+
+.search-results {
+  .entry-title {
+    text-align: left;
+
+    a {
+      text-align: left;
+      color: $color__teal-brand-color;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  }
+}
+
+.search-form {
+  height: 30px;
+}

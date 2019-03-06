@@ -9,17 +9,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+		<div class="product-image-wrapper">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail( 'large' ); ?>
+			<?php endif; ?>
+		</div>
 	</header><!-- .entry-header -->
-
-  <span><?php echo CFS()->get( 'product_price' ); ?></span>
-
+	
+	
 	<div class="entry-content">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<span><?php echo CFS()->get( 'product_price' ); ?></span>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

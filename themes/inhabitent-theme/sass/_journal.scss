@@ -122,23 +122,60 @@
   }
 }
 
-// .form-submit {
-//   .button {
-//     background: #248a83;
-//     color: #fff;
-//     cursor: pointer;
-//     border: none;
-//     border-radius: 0;
-//     font-family: $font__novecento;
-//     text-decoration: none;
-//     text-transform: uppercase;
-//     font-size: 1.2rem;
-//     line-height: 1;
-//     padding: .75rem 1.5rem;
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
 
-//     &:hover {
-//       background: #19625d;
-//       color: #fff;
-//     }
-//   }
-// }
+.comment-form-author,
+.comment-form-email {
+  float: left;
+
+  input {
+    width: 100%;
+  }
+}
+
+.comment-form-author {
+  margin-right: 1%;
+  width: 49%;
+}
+
+.comment-form-email {
+  margin-left: 1%;
+  width: 49%;
+}
+
+.comment-form-url {
+  clear: left;
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+}
+
+.form-submit {
+  .submit {
+    background: #248a83;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    font-family: $font__novecento;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    border-color: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    &:hover {
+      background: #19625d;
+      color: #fff;
+      box-shadow: none;
+
+    }
+  }
+}

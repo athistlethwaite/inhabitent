@@ -4,6 +4,7 @@
 .site-content {
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 3rem;
 }
 
 
@@ -11,7 +12,7 @@
 .single,
 .page-template-default,
 .archive,
-.search,
+.search-results,
 .error404 {
   .site-content {
     display: flex;
@@ -24,7 +25,7 @@
     .single-journal-page,
     .archive-page,
     .find-us-page,
-    .search,
+    .search-results,
     .error404 {
       width: 73%;
       padding-right: 5%;
@@ -34,7 +35,6 @@
     }
   }
 }
-
 
 .tax-product_type {
   .site-content {
@@ -138,6 +138,18 @@
 }
 
 /*--------------------------------------------------------------
+# Archive Page 
+--------------------------------------------------------------*/
+
+.archive-page {
+  .page-title {
+    border-bottom: $color__solid-border;
+    text-align: start;
+    margin-bottom: 3rem;
+  }
+}
+
+/*--------------------------------------------------------------
 # Find Us Page
 --------------------------------------------------------------*/
 
@@ -152,5 +164,67 @@
     width: 100%;
     height: 300px;
     margin-top: 20px;
+  }
+
+  .wpcf7-submit {
+    background: #248a83;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    font-family: $font__novecento;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    border-color: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    &:hover {
+      background: #19625d;
+      color: #fff;
+      box-shadow: none;
+
+    }
+  }
+}
+
+label {
+  display: block;
+  color: $color__purple-brand-color;
+  margin-bottom: $base__space-unit;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  background-color: #f4f4f4;
+  border: $color__solid-border;
+  border-radius: 0;
+  color: #666;
+
+  &:focus {
+    color: #111;
+  }
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"] {
+    padding: ($base__space-unit / 3);
+  }
+
+
+  textarea {
+    padding-left: $base__space-unit / 3;
+    width: 100%;
   }
 }

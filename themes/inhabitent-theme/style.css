@@ -647,6 +647,9 @@ body {
 ul {
   padding: 0; }
 
+.site-content {
+  padding-top: 40px; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -742,13 +745,14 @@ object {
 --------------------------------------------------------------*/
 .site-content {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 3rem; }
 
 .blog .site-content,
 .single .site-content,
 .page-template-default .site-content,
 .archive .site-content,
-.search .site-content,
+.search-results .site-content,
 .error404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,37 +767,37 @@ object {
   .blog .site-content .single-journal-page,
   .blog .site-content .archive-page,
   .blog .site-content .find-us-page,
-  .blog .site-content .search,
+  .blog .site-content .search-results,
   .blog .site-content .error404,
   .single .site-content .journal-page,
   .single .site-content .single-journal-page,
   .single .site-content .archive-page,
   .single .site-content .find-us-page,
-  .single .site-content .search,
+  .single .site-content .search-results,
   .single .site-content .error404,
   .page-template-default .site-content .journal-page,
   .page-template-default .site-content .single-journal-page,
   .page-template-default .site-content .archive-page,
   .page-template-default .site-content .find-us-page,
-  .page-template-default .site-content .search,
+  .page-template-default .site-content .search-results,
   .page-template-default .site-content .error404,
   .archive .site-content .journal-page,
   .archive .site-content .single-journal-page,
   .archive .site-content .archive-page,
   .archive .site-content .find-us-page,
-  .archive .site-content .search,
+  .archive .site-content .search-results,
   .archive .site-content .error404,
-  .search .site-content .journal-page,
-  .search .site-content .single-journal-page,
-  .search .site-content .archive-page,
-  .search .site-content .find-us-page,
-  .search .site-content .search,
-  .search .site-content .error404,
+  .search-results .site-content .journal-page,
+  .search-results .site-content .single-journal-page,
+  .search-results .site-content .archive-page,
+  .search-results .site-content .find-us-page,
+  .search-results .site-content .search-results,
+  .search-results .site-content .error404,
   .error404 .site-content .journal-page,
   .error404 .site-content .single-journal-page,
   .error404 .site-content .archive-page,
   .error404 .site-content .find-us-page,
-  .error404 .site-content .search,
+  .error404 .site-content .search-results,
   .error404 .site-content .error404 {
     width: 73%;
     padding-right: 5%;
@@ -872,6 +876,14 @@ object {
   width: 800px; }
 
 /*--------------------------------------------------------------
+# Archive Page 
+--------------------------------------------------------------*/
+.archive-page .page-title {
+  border-bottom: #e1e1e1;
+  text-align: start;
+  margin-bottom: 3rem; }
+
+/*--------------------------------------------------------------
 # Find Us Page
 --------------------------------------------------------------*/
 .find-us-page h1,
@@ -883,10 +895,94 @@ object {
   height: 300px;
   margin-top: 20px; }
 
+.find-us-page .wpcf7-submit {
+  background: #248a83;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  font-family: "Novecento", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+  .find-us-page .wpcf7-submit:hover {
+    background: #19625d;
+    color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+label {
+  display: block;
+  color: #2f1339;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  background-color: #f4f4f4;
+  border: #e1e1e1;
+  border-radius: 0;
+  color: #666; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    color: #111; }
+  input[type="text"] input[type="text"],
+  input[type="text"] input[type="email"],
+  input[type="text"] input[type="url"],
+  input[type="text"] input[type="password"],
+  input[type="text"] input[type="search"],
+  input[type="email"] input[type="text"],
+  input[type="email"] input[type="email"],
+  input[type="email"] input[type="url"],
+  input[type="email"] input[type="password"],
+  input[type="email"] input[type="search"],
+  input[type="url"] input[type="text"],
+  input[type="url"] input[type="email"],
+  input[type="url"] input[type="url"],
+  input[type="url"] input[type="password"],
+  input[type="url"] input[type="search"],
+  input[type="password"] input[type="text"],
+  input[type="password"] input[type="email"],
+  input[type="password"] input[type="url"],
+  input[type="password"] input[type="password"],
+  input[type="password"] input[type="search"],
+  input[type="search"] input[type="text"],
+  input[type="search"] input[type="email"],
+  input[type="search"] input[type="url"],
+  input[type="search"] input[type="password"],
+  input[type="search"] input[type="search"],
+  textarea input[type="text"],
+  textarea input[type="email"],
+  textarea input[type="url"],
+  textarea input[type="password"],
+  textarea input[type="search"] {
+    padding: 0.5rem; }
+  input[type="text"] textarea,
+  input[type="email"] textarea,
+  input[type="url"] textarea,
+  input[type="password"] textarea,
+  input[type="search"] textarea,
+  textarea textarea {
+    padding-left: 0.5rem;
+    width: 100%; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.home,
 .site-header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -898,38 +994,41 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
   width: 100%;
-  border-bottom: 1px solid #e1e1e1; }
-  .home .inhabitent-header,
-  .site-header .inhabitent-header {
-    margin: 0 auto;
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(255, 255, 255, 0.85); }
+
+.home {
+  width: 100%; }
+
+.inhabitent-header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .inhabitent-header .front-logo img {
+    height: 50px;
+    width: 50px;
+    padding-top: 5px; }
+  .inhabitent-header .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-    .home .inhabitent-header .front-logo img,
-    .site-header .inhabitent-header .front-logo img {
-      height: 50px;
-      width: 50px;
-      padding-top: 5px; }
-    .home .inhabitent-header .main-navigation,
-    .site-header .inhabitent-header .main-navigation {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      font-family: "Novecento", sans-serif;
-      text-transform: uppercase; }
-      .home .inhabitent-header .main-navigation a,
-      .site-header .inhabitent-header .main-navigation a {
-        color: #248a83; }
-      .home .inhabitent-header .main-navigation .menu-item,
-      .site-header .inhabitent-header .main-navigation .menu-item {
-        padding: 0 12px; }
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase; }
+    .inhabitent-header .main-navigation a {
+      color: #248a83; }
+    .inhabitent-header .main-navigation .menu-item {
+      padding: 0 12px; }
 
 .front-hero-image {
   background-image: url(../../images/inhabitent-logo-full.svg), url(../../images/home-hero.jpg);
@@ -1344,6 +1443,52 @@ h2 {
     text-shadow: none; }
 
 /*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+.comment-form-author,
+.comment-form-email {
+  float: left; }
+  .comment-form-author input,
+  .comment-form-email input {
+    width: 100%; }
+
+.comment-form-author {
+  margin-right: 1%;
+  width: 49%; }
+
+.comment-form-email {
+  margin-left: 1%;
+  width: 49%; }
+
+.comment-form-url {
+  clear: left;
+  width: 100%; }
+  .comment-form-url input {
+    width: 100%; }
+
+.form-submit .submit {
+  background: #248a83;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  font-family: "Novecento", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+  .form-submit .submit:hover {
+    background: #19625d;
+    color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+/*--------------------------------------------------------------
 # Shop Stuff Page 
 --------------------------------------------------------------*/
 .page-header .product-type-list {
@@ -1425,6 +1570,34 @@ h2 {
 /*--------------------------------------------------------------
 # Single Product Page 
 --------------------------------------------------------------*/
+.single-product .content-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.single-product-wrapper .hentry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.single-product-wrapper .entry-header,
+.single-product-wrapper .entry-content {
+  width: 48%; }
+  .single-product-wrapper .entry-header h1,
+  .single-product-wrapper .entry-content h1 {
+    text-align: start;
+    margin: 0; }
+
+.single-product-wrapper span {
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem; }
+
+.single-product-wrapper .entry-title {
+  color: #d99054; }
+
 .error-404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1470,6 +1643,48 @@ fieldset {
   border: none;
   padding: 0; }
 
+.search-button {
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #248A83; }
+  .search-button:hover {
+    color: none; }
+
+.search-form fieldset {
+  border: white;
+  padding: 0; }
+  .search-form fieldset .icon-search {
+    color: #248a83; }
+  .search-form fieldset input.search-field {
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    font-family: "Novecento", sans-serif; }
+    .search-form fieldset input.search-field:focus {
+      outline: none; }
+
 /*--------------------------------------------------------------
 # Search Results
 --------------------------------------------------------------*/
+.search-results .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }
+  .search-results .page-header h1 {
+    text-align: left; }
+
+.search-results .entry-title {
+  text-align: left; }
+  .search-results .entry-title a {
+    text-align: left;
+    color: #248A83;
+    text-decoration: none;
+    font-weight: bold; }
+
+.search-form {
+  height: 30px; }

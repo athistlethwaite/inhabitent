@@ -2,39 +2,48 @@
 # Header
 --------------------------------------------------------------*/
 
-.home,
+
 .site-header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // position: fixed;
+  position: fixed;
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+  z-index: 500;
+  background-color: hsla(0, 0%, 100%, 0.85);
+}
 
-  .inhabitent-header {
-    margin: 0 auto;
+
+.home,
+  {
+  width: 100%;
+}
+
+.inhabitent-header {
+  margin: 0 auto;
+  display: flex;
+
+  .front-logo img {
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+  }
+
+  .main-navigation {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: $font__novecento;
+    text-transform: uppercase;
 
-    .front-logo img {
-      height: 50px;
-      width: 50px;
-      padding-top: 5px;
+    a {
+      color: #248a83;
     }
 
-    .main-navigation {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-family: $font__novecento;
-      text-transform: uppercase;
-
-      a {
-        color: #248a83;
-      }
-
-      .menu-item {
-        padding: 0 12px;
-      }
+    .menu-item {
+      padding: 0 12px;
     }
   }
 }
