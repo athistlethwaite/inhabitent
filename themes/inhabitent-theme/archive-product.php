@@ -45,7 +45,8 @@ get_header(); ?>
 						</div>
 				
 				</div>
-<?php endwhile;  ?>
+				
+				<?php endwhile;  ?>
 				<?php endif; ?>
 
 			</div>

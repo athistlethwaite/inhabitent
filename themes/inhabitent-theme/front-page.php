@@ -18,7 +18,7 @@ get_header();?>
           <?php $product_types=get_terms('product_type'); ?>
           <?php foreach ( $product_types as $product_type ) : setup_postdata( $term ); ?>
           <div class="product-type-wrapper">
-            <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/'.$product_type ->slug . '.svg'?>> 
+            <img alt='header-image' src=<?php echo get_template_directory_uri().'/images/product-type-icons/'.$product_type ->slug . '.svg'?>> 
             <p><?php echo $product_type -> description ?></p>
             <a class="btn" href=<?php echo get_term_link($product_type)?>> <?php echo $product_type->name?> Stuff</a>
           </div>
@@ -39,7 +39,7 @@ get_header();?>
               <?php if (has_post_thumbnail()): ?>
               
               <div class="thumbnail">
-					      <?php the_post_thumbnail('large');?>
+				<?php the_post_thumbnail('large');?>
               </div>
 
 				      <?php endif; ?>
@@ -70,7 +70,7 @@ get_header();?>
         <div class="beach-top-right">
             <div class="beach-night">
                 <div class="story-info">
-                    <a href="#" class="" beach-text"">A Night with Friends at the Beach</a>
+                    <a href="#" class="beach-text">A Night with Friends at the Beach</a>
                     <a href="#"><span class="read">Read More</span></a>
                 </div>
             </div>

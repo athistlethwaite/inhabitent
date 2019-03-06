@@ -26,7 +26,7 @@
 					</div><!-- .site-branding -->
 
 					<div class = "front-logo">
-						<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-tent.svg" />
+						<a href="<?php echo esc_url(home_url('/')); ?>"><img alt="front-logo" src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-tent.svg" />
 					</div> 
 
 
@@ -39,6 +39,7 @@
 								<i class="fas fa-search fa-lg"></i>
 							</button>
 						</div>
+						
 						<div class="search-form">
 							<?php get_search_form(); ?>
 						</div>
