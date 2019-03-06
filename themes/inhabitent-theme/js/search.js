@@ -10,18 +10,15 @@ jQuery(document).ready(function ($) {
   });
 
   $('header .search-field').on('blur', function () {
-    $('header .search-field').hide(500);
-  });
+    if ($('header .search-field').val() === '') {
+      $('header .search-field').hide(500);
+    }
 
+  });
 });
 
 
-//Stretch Goal** 
-// if ($('.home').length || $('.page-template-about').length) {
-//   $('.site-header').addClass('front-hero-image');
-// }
-
-//Change of header:
+//Stretch Goal - Change of header:
 // $(window).scroll(function () {
 //   var screenPosition = $(document).scrollTop();
 //   if (screenPosition < $('.front-header').height() || screenPosition < $('.page-template-about .entry-header').height()) {
