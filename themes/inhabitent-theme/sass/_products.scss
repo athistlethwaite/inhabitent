@@ -62,7 +62,7 @@
   .product-title {
     display: inline;
     text-transform: capitalize;
-    font-family: Merriweather Web, serif;
+    font-family: $font__merriweather;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0;
@@ -84,7 +84,6 @@
     text-transform: capitalize;
     font-family: $font__merriweather;
     font-size: 1rem;
-    line-height: 1;
     font-weight: 400;
     letter-spacing: 0;
     padding-left: 4px;
