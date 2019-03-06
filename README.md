@@ -2,7 +2,7 @@
 
 This project demonstates a multi-page website built in WordPress.
 
-![](inhabitent.gif)
+![](inhabitent-readme.gif)
 
 ## Some Features 
 
