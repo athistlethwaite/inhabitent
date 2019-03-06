@@ -1,24 +1,17 @@
 // Toggle search button
 
-$(document).ready(function ($) {
-  let $seachInput = $('.main-navigation .search-field');
-  $seachInput.hide();
+jQuery(document).ready(function ($) {
+  $('.search-field').attr("placeholder", "Type and press enter...");
+  $('.search-field').hide();
+  $('.search-submit').hide();
   console.log(123);
 
-  $('.main-navigation .search-submit').on('click', function (evt) {
-    evt.preventDefault();
-    $seachInput.show('slow');
-    $seachInput.focus();
+  $('.search-button').click(() => {
+    $('header .search-field').show('slow');
+  });
 
-    $(document).on('keypress', function (event) {
-      if ($seachInput.val() !== '') {
-        if (event.which == 13) {
-          $('.search-form').submit();
-        }
-      }
-    });
+  $('header .search-field').on('blur', function () {
+    $('header .search-field').hide(500);
   });
-  $seachInput.on('blur', function () {
-    $seachInput.hide(500);
-  });
+
 });
