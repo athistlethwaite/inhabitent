@@ -1648,25 +1648,35 @@ fieldset {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #248A83; }
+  color: #248A83;
+  text-shadow: none; }
   .search-button:hover {
-    color: none; }
+    color: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: none; }
 
 .search-form fieldset {
-  border: white;
+  border: none;
   padding: 0; }
   .search-form fieldset .icon-search {
     color: #248a83; }
+    .search-form fieldset .icon-search:hover {
+      color: none; }
   .search-form fieldset input.search-field {
     width: 100%;
-    background-color: white;
     border-radius: 0;
+    border: none;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 0.9em;
-    font-family: "Novecento", sans-serif; }
+    font-size: 1em;
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    background: transparent; }
     .search-form fieldset input.search-field:focus {
       outline: none; }
+    .search-form fieldset input.search-field:hover {
+      color: none; }
 
 /*--------------------------------------------------------------
 # Search Results

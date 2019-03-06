@@ -12,32 +12,46 @@ fieldset {
   background: none;
   box-shadow: none;
   color: $color__teal-brand-color;
+  text-shadow: none;
 
   &:hover {
     color: none;
+    box-shadow: none;
+    border-color: none;
   }
 }
 
-
 .search-form fieldset {
-  border: white;
+  border: none;
   padding: 0;
+
 
   .icon-search {
     color: #248a83;
+
+    &:hover {
+      color: none;
+    }
+
   }
 
   input.search-field {
     width: 100%;
-    background-color: white;
     border-radius: 0;
+    border: none;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: $font__novecento;
+    text-transform: uppercase;
+    background: transparent;
 
     &:focus {
       outline: none;
+    }
+
+    &:hover {
+      color: none;
     }
   }
 }
